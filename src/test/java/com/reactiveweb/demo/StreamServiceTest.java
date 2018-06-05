@@ -14,6 +14,22 @@ import org.junit.Test;
 public class StreamServiceTest {
 
   @Test
+  public void succeedFilterNumericStrings() {
+    List<String> input = asList("hello", "th3r3", "i'm", "m1tch", "mitch");
+    List<String> actual = StreamService.filterNumericStrings(input);
+    List<String> expected = asList("hello", "i'm", "mitch");
+    assertThat(actual, is(expected));
+  }
+
+  @Test
+  public void failFilterNumericStrings() {
+    List<String> input = asList("hello", "th3r3", "i'm", "m1tch", "mitch");
+    List<String> actual = StreamService.filterNumericStrings(input);
+    List<String> expected = asList("th3r3", "m1tch");
+    assertThat(actual, is(not(expected)));
+  }
+
+  @Test
   public void succeedShouldMapStringsToUpperCase() {
     List<String> input = asList("This", "is", "java", "8");
     List<String> actual = StreamService.mapToUpperCase(input);
@@ -58,7 +74,7 @@ public class StreamServiceTest {
     List<Integer> input = asList(3, 2, 5, 4, 1);
     int result = StreamService.getMinimum(input);
     int expected = 2;
-    assertEquals(result, expected);
+    assertNotEquals(result, expected);
   }
 
 }

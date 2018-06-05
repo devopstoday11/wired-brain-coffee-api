@@ -2,11 +2,17 @@ package com.reactiveweb.demo.services;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamService {
+
+  public static List<String> filterNumericStrings(List<String> list) {
+    Stream<String> stream = list.stream();
+    return stream
+        .filter(string -> !string.matches(".*\\d.*"))
+        .collect(Collectors.toList());
+  }
 
   public static List<String> mapToUpperCase(List<String> list) {
     Stream<String> stream = list.stream();
@@ -17,7 +23,9 @@ public class StreamService {
 
   public static int aggregateSum(List<Integer> list) {
     Stream<Integer> stream = list.stream();
-    return stream.reduce((accumulator, value) -> accumulator + value).get();
+    return stream
+        .reduce((accumulator, value) -> accumulator + value)
+        .get();
   }
 
   public static <T> T getMinimum(List<T> list) {
