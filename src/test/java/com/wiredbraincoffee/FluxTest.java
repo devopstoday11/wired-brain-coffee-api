@@ -1,4 +1,4 @@
-package com.reactiveweb.demo;
+package com.wiredbraincoffee;
 
 import java.util.Arrays;
 import org.junit.Test;
@@ -25,6 +25,19 @@ public class FluxTest {
     Flux.range(10, 5)
         .log()
         .subscribe();
+  }
+
+  @Test
+  public void fluxRequest() {
+    Flux.range(1, 5)
+        .log()
+        .subscribe(
+            null,
+            null,
+            null,
+            // request relieves backpressure
+            s -> s.request(3)
+        );
   }
 
 }

@@ -1,4 +1,4 @@
-package com.reactiveweb.demo.controllers;
+package com.wiredbraincoffee.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

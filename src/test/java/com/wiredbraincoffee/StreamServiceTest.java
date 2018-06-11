@@ -1,4 +1,4 @@
-package com.reactiveweb.demo;
+package com.wiredbraincoffee;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.is;
@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertThat;
 
-import com.reactiveweb.demo.services.StreamService;
+import com.wiredbraincoffee.services.StreamService;
 import java.util.List;
 import org.junit.Test;
 

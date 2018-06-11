@@ -1,12 +1,12 @@
-package com.reactiveweb.demo;
+package com.wiredbraincoffee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReactiveWebApplication {
+public class WiredBrainCoffeeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReactiveWebApplication.class, args);
+		SpringApplication.run(WiredBrainCoffeeApplication.class, args);
 	}
 }
