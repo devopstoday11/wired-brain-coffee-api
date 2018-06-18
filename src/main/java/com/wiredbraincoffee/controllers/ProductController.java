@@ -82,5 +82,4 @@ public class ProductController {
         .map(val -> new ProductEvent(val, "Product Event"));
   }
 
-
 }
