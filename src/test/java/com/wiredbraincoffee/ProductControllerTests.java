@@ -20,10 +20,9 @@ import org.springframework.test.web.reactive.server.FluxExchangeResult;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.test.StepVerifier;
 
-@RunWith(SpringRunner.class)
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class ProductControllerTests {
+public class ProductControllerTests extends WiredBrainCoffeeApplicationTests {
   private WebTestClient client;
   private List<Product> expectedList;
 

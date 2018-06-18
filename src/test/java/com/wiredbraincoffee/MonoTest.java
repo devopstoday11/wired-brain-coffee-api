@@ -3,7 +3,7 @@ package com.wiredbraincoffee;
 import org.junit.Test;
 import reactor.core.publisher.Mono;
 
-public class MonoTest {
+public class MonoTest extends WiredBrainCoffeeApplicationTests {
 
   @Test
   public void firstMono() {

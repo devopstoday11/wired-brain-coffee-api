@@ -5,7 +5,7 @@ import org.junit.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-public class OperatorTest {
+public class OperatorTest extends WiredBrainCoffeeApplicationTests {
 
   @Test
   public void map() {

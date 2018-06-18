@@ -4,7 +4,7 @@ import java.util.Arrays;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 
-public class FluxTest {
+public class FluxTest extends WiredBrainCoffeeApplicationTests {
 
   @Test
   public void firstFlux() {

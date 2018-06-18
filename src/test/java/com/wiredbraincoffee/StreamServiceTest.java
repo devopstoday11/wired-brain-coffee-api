@@ -11,7 +11,7 @@ import com.wiredbraincoffee.services.StreamService;
 import java.util.List;
 import org.junit.Test;
 
-public class StreamServiceTest {
+public class StreamServiceTest extends WiredBrainCoffeeApplicationTests {
 
   @Test
   public void succeedFilterNumericStrings() {
