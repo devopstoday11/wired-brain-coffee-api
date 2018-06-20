@@ -1,7 +1,8 @@
-package com.wiredbraincoffee;
+package com.wiredbraincoffee.controllers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.wiredbraincoffee.WiredBrainCoffeeApplicationTests;
 import com.wiredbraincoffee.controllers.ProductController;
 import com.wiredbraincoffee.models.Product;
 import com.wiredbraincoffee.models.ProductEvent;
